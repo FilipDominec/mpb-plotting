@@ -28,7 +28,7 @@ For more physical background, see the excellent book *Photonic Crystals: Molding
 ## Requirements
 * unix-like environment with a bash-like shell
 * mpb
-* python-numpy
+* python-scipy
 * python-matplotlib
 * (imagemagick)
 

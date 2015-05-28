@@ -137,16 +137,8 @@ try:
         freqs_XUptoM = freqs[:,-1]
         plt.plot(Ky+.5, freqs_XUptoM*fcoef/funit, label=u"band #$%d$"%(plotband-1), ls='-',  lw=2, c='#888888')
 
-
-        ## Static annotation of the horizontal K-axis
-        bbox=dict(boxstyle='round, pad=.15', fc='white', alpha=0.5)
-        arrowprops = dict(arrowstyle = '->', connectionstyle = 'arc3,rad=0')
-        plt.annotate("$\Gamma$", xy = (.001, .001), xytext = (10, 10), textcoords='offset points', ha='right', va='bottom', bbox=bbox, arrowprops=arrowprops)
-        plt.annotate("X", xy = (.499,.001), xytext = (-10, 10), textcoords='offset points', ha='right', va='bottom', bbox=bbox, arrowprops=arrowprops)
-        plt.annotate("M", xy = (.499+.5,.001), xytext = (-10, 10), textcoords='offset points', ha='right', va='bottom', bbox=bbox, arrowprops=arrowprops)
-
         ## Floating annotation of the points at the dispersion curves
-        bbox_args = dict(boxstyle="round, pad=.1", fc='w', ec='w', color='#ffffff', alpha=1)
+        bbox_args = dict(boxstyle="round, pad=.1", fc='w', ec='w', color='#ffffff', alpha=.7)
         arrow_args = dict(arrowstyle="->", color='r', lw=1, alpha=1)
         plt.annotate('$\Gamma%d$'%plotband, xy=((1./columncount-.02), (plotband - .5)/bandnumber),  xycoords='figure fraction',
                      xytext=(-.05, freqs_GammaUptoX[0]*3), textcoords='data',
