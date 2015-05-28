@@ -17,9 +17,9 @@ A typical output of the script follows. This one shows six dispersion curves, an
 a periodic dielectric slab with a permittivity of 2 and 30% filling fraction. 
 
 The electric field shapes at the Gamma, X, and M-points are added at the sides, and clearly connected by red arrows with the
-respective points in the dispersion curves. Red-white-blue color scheme shows the perpendicular amplitude of the
-electric field. Green lines depict the nodal planes, where the amplitude of the electric field is always zero (for a monochromatic wave).
-The black lines outline the dielectric structure.
+respective points in the dispersion curves. 
+
+Red-white-blue color scheme shows the amplitude of the electric field perpendicular to the screen, each mode plot corresponding to 2x2 unit cells. Green lines on it depict the nodal planes, where the amplitude of the electric field is always zero (for a monochromatic wave).  The black lines outline the dielectric structure.
 
 For a more physical background, see the excellent book *Photonic Crystals: Molding the Flow of Light*  (freely available from http://ab-initio.mit.edu/book/)
 
