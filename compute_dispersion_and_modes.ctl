@@ -59,7 +59,7 @@
 	(list 
 		(make block 
 			(center 0 0 0) 
-			(size .3 infinity infinity)
+			(size R infinity infinity)
 			(material (make dielectric (epsilon eps))))
 	)
 )

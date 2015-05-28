@@ -12,6 +12,11 @@ some of its parameters.
 
 Written in 2013-15 by Filip Dominec, filip.dominec@gmail.com
 
+== Example ==
+A typical output of the script follows. This one shows six dispersion curves, and all corresponding modes, for a periodic dielectric slab with a permittivity of 2 and 30% filling fraction.
+
+![1-D dielectric slab dispersion curves and corresponding modes](./example_1D_dielectric_slabs/EBars_eps100_R=10000_eps=2.png)
+
 == TODOs ==
 [ ] sync with the project from 2014-01 and cleanup of old code
 [ ] add all relevant structures (rods, holes, etc.)
