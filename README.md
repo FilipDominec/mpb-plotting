@@ -17,7 +17,7 @@ A typical output of the script follows. This one shows six dispersion curves, an
 
 ![1-D dielectric slab dispersion curves and corresponding modes](./example_1D_dielectric_slabs/EBars_eps100_R=10000_eps=2.png)
 
-For some physical background, see the and excellent book '''Photonic Crystals: Molding the Flow of Light'''  (freely available from http://ab-initio.mit.edu/book/)
+For some physical background, see the excellent book *Photonic Crystals: Molding the Flow of Light*  (freely available from http://ab-initio.mit.edu/book/)
 
 ## Requirements
 * unix-like environment with a bash-like shell
@@ -27,8 +27,8 @@ For some physical background, see the and excellent book '''Photonic Crystals: M
 * (imagemagick)
 
 ## TODOs
-[ ] sync with the project from 2014-01 and cleanup of old code
-[ ] add all relevant structures (rods, holes, etc.)
-[ ] enable electric/magnetic field switching
-[ ] write some better documentation, add more example plots
-[ ] (test anisotropy of materials?)
+* [ ] sync with the project from 2014-01 and cleanup of old code
+* [ ] add all relevant structures (rods, holes, etc.)
+* [ ] enable electric/magnetic field switching
+* [ ] write some better documentation, add more example plots
+* [ ] (test anisotropy of materials?)
