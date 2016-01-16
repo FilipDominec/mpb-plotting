@@ -10,6 +10,7 @@ mkdir data -p
 #for rr in 0 3000 10000 12000
 rr=10000
 
+#for ee in `seq 1 1 20`
 for ee in `seq 1 1 20`
 do
 	## Prepare and print the parameters that are used in IFC.ctl to define the structure
@@ -19,8 +20,8 @@ do
     ## Generate IFC and fields (at Gamma, X and M points)
 	mpb $param ../compute_dispersion_and_modes.ctl | grep kgrid > freq.csv
     cp freq.csv data/freq_`echo $param | tr ' ' '_'`.csv
-	mpb-data -m 2 [eh].*h5 
-	mpb-data -m 2 epsilon.h5
+	mpb-data -m 2 compute_dispersion_and_modes-*h5 
+	mpb-data -m 2 compute_dispersion_and_modes-epsilon.h5
 
 	## Plot the results
 	python ../plot_dispersion_and_modes.py $param 
@@ -29,7 +30,7 @@ do
 	#python ../HxHyEz_plot.py  [e].*h5 [h].*h5 [h].*h5
 
 	## Clean up
-    rm -r [eh].*h5
+    rm -r compute_dispersion_and_modes-*h5
 done
 
 

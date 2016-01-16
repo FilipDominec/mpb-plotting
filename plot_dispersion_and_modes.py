@@ -26,6 +26,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 
 filename = "freq.csv"
+ctlscript = "compute_dispersion_and_modes-" ## what is prepended to *.h5 files; try empty if simulation fails to find them
 bandnumber = 6
 cellspacing = 100e-6
 fcoef = c / cellspacing
@@ -76,16 +77,16 @@ def plot_IFC(Kx, Ky, freqs):#{{{
     plt.grid(True)
 #}}}
 def generate_filenames(k=1, band=1, pol='tm'):#{{{
-    file_Ez = 'e.k%02d.b%02d.z.%s.h5' % (k, band, pol)
-    file_Hx = 'h.k%02d.b%02d.x.%s.h5' % (k, band, pol)
-    file_Hy = 'h.k%02d.b%02d.y.%s.h5' % (k, band, pol)
+    file_Ez = '%se.k%02d.b%02d.z.%s.h5' % (ctlscript, k, band, pol)
+    file_Hx = '%sh.k%02d.b%02d.x.%s.h5' % (ctlscript, k, band, pol)
+    file_Hy = '%sh.k%02d.b%02d.y.%s.h5' % (ctlscript, k, band, pol)
     return file_Ez, file_Hx, file_Hy
 #}}}
 def plot_mode(file1, file2, file3, title='', plot_vectors=True):#{{{
     #print "---------"
     #print h5py.File('epsilon.h5', "r").keys()
     #print h5py.File(file2, "r").keys()
-    eps = np.array(h5py.File('epsilon.h5', "r")['data-new'])
+    eps = np.array(h5py.File('%sepsilon.h5' % ctlscript, "r")['data-new'])
     Ez_data = np.array(h5py.File(file1, "r")['z.i-new'])
     Hx_data = np.array(h5py.File(file2, "r")['x.r-new'])
     Hy_data = np.array(h5py.File(file3, "r")['y.r-new'])
