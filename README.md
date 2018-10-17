@@ -5,8 +5,8 @@ Plot photonic dispersion curves with mode shapes (a frontend to MIT Photonic ban
 A set of Scheme/Python scripts that computes and plots the band structure of a 2-D photonic crystal and,
 most importantly, draws also the modes corresponding to the band edges.
 
-The `batch.sh' script feeds `compute_dispersion_and_modes.ctl' to the MPB program to get the numerical data. 
-Then it runs `plot_dispersion_and_modes.py' to plot all results (see this file for explanation). This procedure 
+The `batch.sh` script feeds `compute_dispersion_and_modes.ctl` to the MPB program to get the numerical data. 
+Then it runs `plot_dispersion_and_modes.py` to plot all results (see this file for explanation). This procedure 
 can be repeated in a cycle in batch.sh, mapping how the electromagnetic behaviour of the structure changes with 
 some of its parameters. The scripts can be fully customized and automated to fit your research.
 
